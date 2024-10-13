@@ -1,0 +1,5 @@
+Room Number: 1, Guest Name: A
+Room Number: 2, Guest Name: B
+Room Number: 3, Guest Name: C
+Room Number: 4, Guest Name: D
+Room Number: 5, Guest Name: E
