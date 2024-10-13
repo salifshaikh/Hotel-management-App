@@ -1,6 +1,6 @@
 #include <iostream>
-#include <fstream>  // For file handling
-#include <cstring>  // For string functions
+#include <fstream>
+#include <cstring>  
 
 using namespace std;
 
@@ -10,7 +10,6 @@ struct Room {
     bool isBooked;
 };
 
-// Function to reserve a room
 void reserveRoom(Room rooms[], int totalRooms) {
     int roomNum;
     cout << "Enter room number (1-" << totalRooms << "): ";
@@ -32,7 +31,6 @@ void reserveRoom(Room rooms[], int totalRooms) {
     }
 }
 
-// Function to display the number of empty rooms
 void displayEmptyRooms(Room rooms[], int totalRooms) {
     int emptyCount = 0;
     cout << "List of empty rooms:\n";
@@ -49,7 +47,6 @@ void displayEmptyRooms(Room rooms[], int totalRooms) {
     }
 }
 
-// Function to write booking information to a file
 void writeToFile(Room rooms[], int totalRooms, const char* filename) {
     ofstream file;
     file.open(filename);
@@ -76,7 +73,6 @@ int main() {
     const int totalRooms = 10;
     Room rooms[totalRooms];
 
-    // Initialize rooms
     for (int i = 0; i < totalRooms; i++) {
         rooms[i].roomNumber = i + 1;
         rooms[i].isBooked = false;
